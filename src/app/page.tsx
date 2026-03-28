@@ -17,6 +17,7 @@ import UnstyledLink from '@/components/links/UnstyledLink';
  */
 import Logo from '~/svg/Logo.svg';
 import { climateCrisis } from '@/components/fonts';
+import CountUp from '@/components/countUp';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -28,8 +29,8 @@ export default function HomePage() {
       <section className='bg-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
           <Logo className='w-16' />
-          <h1 className={climateCrisis.className}>Hack Pompey - 100</h1>
-
+          <h1 className={climateCrisis.className}>Hack Pompey</h1>
+          <CountUp />
           {/* <ButtonLink className='mt-6' href='/components' variant='light'>
             See all components
           </ButtonLink>
