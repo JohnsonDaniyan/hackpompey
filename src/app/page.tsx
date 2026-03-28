@@ -16,6 +16,7 @@ import UnstyledLink from '@/components/links/UnstyledLink';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 import Logo from '~/svg/Logo.svg';
+import { climateCrisis } from '@/components/fonts';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -27,9 +28,9 @@ export default function HomePage() {
       <section className='bg-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
           <Logo className='w-16' />
-          <h1 className='mt-4'>Hack Pompey - 100</h1>
+          <h1 className={climateCrisis.className}>Hack Pompey - 100</h1>
 
-          <ButtonLink className='mt-6' href='/components' variant='light'>
+          {/* <ButtonLink className='mt-6' href='/components' variant='light'>
             See all components
           </ButtonLink>
 
@@ -37,7 +38,6 @@ export default function HomePage() {
             href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
             className='mt-4'
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               width='92'
               height='32'
@@ -46,12 +46,7 @@ export default function HomePage() {
             />
           </UnstyledLink>
 
-          <footer className='absolute bottom-2 text-gray-700'>
-            © {new Date().getFullYear()} By{' '}
-            <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-              Theodorus Clarence
-            </UnderlineLink>
-          </footer>
+          <footer className='absolute bottom-2 text-gray-700'></footer> */}
         </div>
       </section>
     </main>
